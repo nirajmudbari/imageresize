@@ -1,3 +1,926 @@
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+ERROR:django.request:Internal Server Error: /imageapi
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\views.py", line 17, in fetchandresize
+    return HttpResponse(getBase64ResizeAndReturnBase64(bufferstr.getvalue()))
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py", line 72, in getBase64ResizeAndReturnBase64
+    bg_color=(255, 255, 255, 0))
+TypeError: resize_contain() got an unexpected keyword argument 'validate'
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+ERROR:django.request:Internal Server Error: /imageapi
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\views.py", line 17, in fetchandresize
+    return HttpResponse(getBase64ResizeAndReturnBase64(bufferstr.getvalue()))
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py", line 72, in getBase64ResizeAndReturnBase64
+    bg_color=(255, 255, 255, 0))
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\resizeimage\resizeimage.py", line 104, in resize_contain
+    img_format = image.format
+AttributeError: 'numpy.ndarray' object has no attribute 'format'
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+ERROR:django.request:Internal Server Error: /imageapi
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\PIL\JpegImagePlugin.py", line 615, in _save
+    rawmode = RAWMODE[im.mode]
+KeyError: 'RGBA'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\views.py", line 17, in fetchandresize
+    return HttpResponse(getBase64ResizeAndReturnBase64(bufferstr.getvalue()))
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py", line 76, in getBase64ResizeAndReturnBase64
+    newbase64 = imageToBase64(resized)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py", line 34, in imageToBase64
+    image.save(buffer, format="JPEG")
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\PIL\Image.py", line 2102, in save
+    save_handler(self, fp, filename)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\PIL\JpegImagePlugin.py", line 617, in _save
+    raise OSError("cannot write mode %s as JPEG" % im.mode)
+OSError: cannot write mode RGBA as JPEG
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+ERROR:django.request:Internal Server Error: /imageapi
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\PIL\JpegImagePlugin.py", line 615, in _save
+    rawmode = RAWMODE[im.mode]
+KeyError: 'RGBA'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\views.py", line 17, in fetchandresize
+    return HttpResponse(getBase64ResizeAndReturnBase64(bufferstr.getvalue()))
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py", line 78, in getBase64ResizeAndReturnBase64
+    newbase64 = imageToBase64(resized)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py", line 34, in imageToBase64
+    image.save(buffer, format="JPEG")
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\PIL\Image.py", line 2102, in save
+    save_handler(self, fp, filename)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\PIL\JpegImagePlugin.py", line 617, in _save
+    raise OSError("cannot write mode %s as JPEG" % im.mode)
+OSError: cannot write mode RGBA as JPEG
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+ERROR:django.request:Internal Server Error: /imageapi
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\PIL\JpegImagePlugin.py", line 615, in _save
+    rawmode = RAWMODE[im.mode]
+KeyError: 'RGBA'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\views.py", line 17, in fetchandresize
+    return HttpResponse(getBase64ResizeAndReturnBase64(bufferstr.getvalue()))
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py", line 79, in getBase64ResizeAndReturnBase64
+    newbase64 = imageToBase64(resized)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py", line 34, in imageToBase64
+    image.save(buffer, format="JPEG")
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\PIL\Image.py", line 2102, in save
+    save_handler(self, fp, filename)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\PIL\JpegImagePlugin.py", line 617, in _save
+    raise OSError("cannot write mode %s as JPEG" % im.mode)
+OSError: cannot write mode RGBA as JPEG
+ERROR:django.request:Internal Server Error: /imageapi
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\PIL\JpegImagePlugin.py", line 615, in _save
+    rawmode = RAWMODE[im.mode]
+KeyError: 'RGBA'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\views.py", line 17, in fetchandresize
+    return HttpResponse(getBase64ResizeAndReturnBase64(bufferstr.getvalue()))
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py", line 79, in getBase64ResizeAndReturnBase64
+    newbase64 = imageToBase64(resized)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py", line 34, in imageToBase64
+    image.save(buffer, format="JPEG")
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\PIL\Image.py", line 2102, in save
+    save_handler(self, fp, filename)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\PIL\JpegImagePlugin.py", line 617, in _save
+    raise OSError("cannot write mode %s as JPEG" % im.mode)
+OSError: cannot write mode RGBA as JPEG
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+ERROR:django.request:Internal Server Error: /imageapi
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\views.py", line 17, in fetchandresize
+    return HttpResponse(getBase64ResizeAndReturnBase64(bufferstr.getvalue()))
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py", line 72, in getBase64ResizeAndReturnBase64
+    bg_color=(255, 255, 255, 0))
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\resizeimage\resizeimage.py", line 104, in resize_contain
+    img_format = image.format
+AttributeError: 'numpy.ndarray' object has no attribute 'format'
+ERROR:django.request:Internal Server Error: /imageapi
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\views.py", line 17, in fetchandresize
+    return HttpResponse(getBase64ResizeAndReturnBase64(bufferstr.getvalue()))
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py", line 72, in getBase64ResizeAndReturnBase64
+    bg_color=(255, 255, 255, 0))
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\resizeimage\resizeimage.py", line 104, in resize_contain
+    img_format = image.format
+AttributeError: 'numpy.ndarray' object has no attribute 'format'
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+ERROR:django.request:Internal Server Error: /imageapi
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\views.py", line 17, in fetchandresize
+    return HttpResponse(getBase64ResizeAndReturnBase64(bufferstr.getvalue()))
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py", line 72, in getBase64ResizeAndReturnBase64
+    bg_color=(255, 255, 255, 0))
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\resizeimage\resizeimage.py", line 104, in resize_contain
+    img_format = image.format
+AttributeError: 'numpy.ndarray' object has no attribute 'format'
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+ERROR:django.request:Internal Server Error: /imageapi
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\PIL\JpegImagePlugin.py", line 615, in _save
+    rawmode = RAWMODE[im.mode]
+KeyError: 'RGBA'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\views.py", line 17, in fetchandresize
+    return HttpResponse(getBase64ResizeAndReturnBase64(bufferstr.getvalue()))
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py", line 80, in getBase64ResizeAndReturnBase64
+    newbase64 = imageToBase64(resized)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py", line 34, in imageToBase64
+    image.save(buffer, format="JPEG")
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\PIL\Image.py", line 2102, in save
+    save_handler(self, fp, filename)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\PIL\JpegImagePlugin.py", line 617, in _save
+    raise OSError("cannot write mode %s as JPEG" % im.mode)
+OSError: cannot write mode RGBA as JPEG
+ERROR:django.request:Internal Server Error: /imageapi
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\PIL\JpegImagePlugin.py", line 615, in _save
+    rawmode = RAWMODE[im.mode]
+KeyError: 'RGBA'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\views.py", line 17, in fetchandresize
+    return HttpResponse(getBase64ResizeAndReturnBase64(bufferstr.getvalue()))
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py", line 80, in getBase64ResizeAndReturnBase64
+    newbase64 = imageToBase64(resized)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py", line 34, in imageToBase64
+    image.save(buffer, format="JPEG")
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\PIL\Image.py", line 2102, in save
+    save_handler(self, fp, filename)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\PIL\JpegImagePlugin.py", line 617, in _save
+    raise OSError("cannot write mode %s as JPEG" % im.mode)
+OSError: cannot write mode RGBA as JPEG
+ERROR:django.request:Internal Server Error: /imageapi
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\PIL\JpegImagePlugin.py", line 615, in _save
+    rawmode = RAWMODE[im.mode]
+KeyError: 'RGBA'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\views.py", line 17, in fetchandresize
+    return HttpResponse(getBase64ResizeAndReturnBase64(bufferstr.getvalue()))
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py", line 81, in getBase64ResizeAndReturnBase64
+    newbase64 = imageToBase64(im)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py", line 34, in imageToBase64
+    image.save(buffer, format="JPEG")
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\PIL\Image.py", line 2102, in save
+    save_handler(self, fp, filename)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\PIL\JpegImagePlugin.py", line 617, in _save
+    raise OSError("cannot write mode %s as JPEG" % im.mode)
+OSError: cannot write mode RGBA as JPEG
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+ERROR:django.request:Internal Server Error: /imageapi
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\views.py", line 17, in fetchandresize
+    return HttpResponse(getBase64ResizeAndReturnBase64(bufferstr.getvalue()))
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py", line 81, in getBase64ResizeAndReturnBase64
+    newbase64 = imageToBase64(im)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py", line 34, in imageToBase64
+    image.save(buffer, format="RGBA")
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\PIL\Image.py", line 2091, in save
+    save_handler = SAVE[format.upper()]
+KeyError: 'RGBA'
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+ERROR:django.request:Internal Server Error: /imageapi
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\views.py", line 17, in fetchandresize
+    return HttpResponse(getBase64ResizeAndReturnBase64(bufferstr.getvalue()))
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py", line 80, in getBase64ResizeAndReturnBase64
+    newbase64 = imageToBase64(im)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py", line 34, in imageToBase64
+    image.save(buffer, format="RGBA")
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\PIL\Image.py", line 2091, in save
+    save_handler = SAVE[format.upper()]
+KeyError: 'RGBA'
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+ERROR:django.request:Internal Server Error: /imageapi
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\PIL\Image.py", line 995, in convert
+    im = self.im.convert(mode, dither)
+ValueError: conversion from RGBA to JPEG not supported
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\views.py", line 17, in fetchandresize
+    return HttpResponse(getBase64ResizeAndReturnBase64(bufferstr.getvalue()))
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py", line 79, in getBase64ResizeAndReturnBase64
+    im = resized.convert("JPEG")
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\PIL\Image.py", line 1000, in convert
+    im = im.convert(mode, dither)
+ValueError: conversion from RGB to JPEG not supported
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+ERROR:django.request:Internal Server Error: /imageapi
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\PIL\Image.py", line 995, in convert
+    im = self.im.convert(mode, dither)
+ValueError: conversion from RGBA to JPEG not supported
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\views.py", line 17, in fetchandresize
+    return HttpResponse(getBase64ResizeAndReturnBase64(bufferstr.getvalue()))
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py", line 80, in getBase64ResizeAndReturnBase64
+    im = resized.convert("JPEG")
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\PIL\Image.py", line 1000, in convert
+    im = im.convert(mode, dither)
+ValueError: conversion from RGB to JPEG not supported
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+ERROR:django.security.RequestDataTooBig:Request body exceeded settings.DATA_UPLOAD_MAX_MEMORY_SIZE.
+WARNING:django.request:Bad Request: /imageapi
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\FinalImageProcessor\settings.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+ERROR:django.request:Internal Server Error: /imageapi
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\views.py", line 17, in fetchandresize
+    return HttpResponse(getBase64ResizeAndReturnBase64(bufferstr.getvalue()))
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py", line 84, in getBase64ResizeAndReturnBase64
+    im_pil.thumbnail(size, Image.LANCZOS, quality=95)
+TypeError: thumbnail() got an unexpected keyword argument 'quality'
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+ERROR:django.request:Internal Server Error: /imageapi
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\views.py", line 17, in fetchandresize
+    return HttpResponse(newlogicforimage(bufferstr.getvalue()))
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py", line 138, in newlogicforimage
+    resizeimage.resize_contain(pilimage, size, validate=True, resample=Image.LANCZOS, bg_color=(255, 255, 255, 0))
+TypeError: resize_contain() got an unexpected keyword argument 'validate'
+ERROR:EurekaClient:Error!
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\py_eureka_client\eureka_client.py", line 721, in send_heart_beat
+    self.__try_all_eureka_server(lambda url: send_heart_beat(url, self.__instance["app"],
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\py_eureka_client\eureka_client.py", line 645, in __try_all_eureka_server
+    fun(url)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\py_eureka_client\eureka_client.py", line 723, in <lambda>
+    status=self.__instance["status"], overriddenstatus=overridden_status))
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\py_eureka_client\eureka_client.py", line 342, in send_heart_beat
+    http_client.load(req, timeout=_DEFAULT_TIME_OUT)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\py_eureka_client\http_client.py", line 129, in load
+    cafile=cafile, capath=capath, cadefault=cadefault, context=context).urlopen()
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\py_eureka_client\http_client.py", line 94, in urlopen
+    cadefault=self.cadefault, context=self.context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python37\lib\urllib\request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python37\lib\urllib\request.py", line 525, in open
+    response = self._open(req, data)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python37\lib\urllib\request.py", line 543, in _open
+    '_open', req)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python37\lib\urllib\request.py", line 503, in _call_chain
+    result = func(*args)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python37\lib\urllib\request.py", line 1347, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python37\lib\urllib\request.py", line 1322, in do_open
+    r = h.getresponse()
+  File "C:\Users\user\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1344, in getresponse
+    response.begin()
+  File "C:\Users\user\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 306, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\user\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 267, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\user\AppData\Local\Programs\Python\Python37\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+socket.timeout: timed out
+INFO:EurekaClient:Cannot send heartbeat to server, try to register
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+ERROR:django.request:Internal Server Error: /imageapi
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\views.py", line 17, in fetchandresize
+    return HttpResponse(newlogicforimage(bufferstr.getvalue()))
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py", line 139, in newlogicforimage
+    quality=95)
+TypeError: resize_contain() got an unexpected keyword argument 'quality'
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+ERROR:django.request:Internal Server Error: /imageapi
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\views.py", line 17, in fetchandresize
+    return HttpResponse(newlogicforimage(bufferstr.getvalue()))
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py", line 138, in newlogicforimage
+    resized = resizeimage.resize_thumbnail(pilimage, size, resample=Image.BICUBIC, bg_color=(255, 255, 255, 0))
+TypeError: resize_thumbnail() got an unexpected keyword argument 'bg_color'
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+ERROR:django.request:Internal Server Error: /imageapi
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\PIL\JpegImagePlugin.py", line 615, in _save
+    rawmode = RAWMODE[im.mode]
+KeyError: 'RGBA'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\views.py", line 17, in fetchandresize
+    return HttpResponse(newlogicforimage(bufferstr.getvalue()))
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py", line 139, in newlogicforimage
+    resized.save('aaaa.jpg', quality=100)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\PIL\Image.py", line 2102, in save
+    save_handler(self, fp, filename)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\PIL\JpegImagePlugin.py", line 617, in _save
+    raise OSError("cannot write mode %s as JPEG" % im.mode)
+OSError: cannot write mode RGBA as JPEG
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+ERROR:django.request:Internal Server Error: /imageapi
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\views.py", line 17, in fetchandresize
+    return HttpResponse(newlogicforimage(bufferstr.getvalue()))
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py", line 145, in newlogicforimage
+    newbase64 = imageToBase64(newimg)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py", line 36, in imageToBase64
+    if image.mode in ('RGBA', 'LA'):
+AttributeError: 'NoneType' object has no attribute 'mode'
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+ERROR:django.request:Internal Server Error: /imageapi
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\views.py", line 17, in fetchandresize
+    return HttpResponse(newlogicforimage(bufferstr.getvalue()))
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py", line 145, in newlogicforimage
+    newimg = Image.open(r'bbb.jpg',subsampling=0)
+TypeError: open() got an unexpected keyword argument 'subsampling'
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+ERROR:django.request:Internal Server Error: /imageapi
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\views.py", line 17, in fetchandresize
+    return HttpResponse(newlogicforimage(bufferstr.getvalue()))
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py", line 154, in newlogicforimage
+    newbase64 = image_to_base64()
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py", line 139, in image_to_base64
+    img.save(buff, format='jpg')
+  File "C:\Users\user\PycharmProjects\FinalImageProcessor\venv\lib\site-packages\PIL\Image.py", line 2091, in save
+    save_handler = SAVE[format.upper()]
+KeyError: 'JPG'
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\user\PycharmProjects\FinalImageProcessor\imageapi\onlyopencv.py changed, reloading.
 WARNING:django.request:Not Found: /
-WARNING:django.request:Not Found: /
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Method Not Allowed: /imageapi
 WARNING:django.request:Not Found: /

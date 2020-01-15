@@ -8,6 +8,12 @@ def main():
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'FinalImageProcessor.settings')
     try:
         from django.core.management import execute_from_command_line
+        import py_eureka_client.eureka_client as eureka_client
+
+        eureka_client.init(eureka_server="http://microservice.api:8761/eureka",
+                           app_name="FinalImageProcessor",
+                           instance_port=8000)
+
     except ImportError as exc:
         raise ImportError(
             "Couldn't import Django. Are you sure it's installed and "
