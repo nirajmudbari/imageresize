@@ -24,7 +24,7 @@ SECRET_KEY = 'e#cu^-n3pi#914+s3zgmh9xsl2)x*@^hnsgeonbxfthsl89m)-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-DATA_UPLOAD_MAX_MEMORY_SIZE = 40000000
+DATA_UPLOAD_MAX_MEMORY_SIZE = 100000000
 
 REST_FRAMEWORK = {
     # other settings...
